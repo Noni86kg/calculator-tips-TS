@@ -1,0 +1,87 @@
+h3 {
+  letter-spacing: 1px;
+  color: var(--darkGrayishCyan);
+}
+.hidden-message {
+  color: var(--red);
+  font-size: 16px;
+}
+.form {
+  display: flex;
+  align-items: center;
+}
+input {
+  display: flex;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  background: var(--lightGrayishCyan);
+  font-size: 26px;
+  line-height: 42px;
+  padding: 5px 15px;
+  width: 100%;
+  color: var(--veryDarkCyan);
+  font-weight: 700;
+  cursor: pointer;
+}
+input:focus {
+  outline: 1px solid var(--strongCyan);
+}
+input::placeholder {
+  color: var(--darkGrayish);
+  font-weight: 700;
+  font-size: 26px;
+  font-family: "Space Mono", monospace;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.icons {
+  position: absolute;
+  margin-left: 25px;
+  width: 14px;
+  height: 17px;
+  background-repeat: no-repeat;
+}
+.icons.dollar {
+  background-image: url(../assets/images/icon-dollar.svg);
+}
+.icons.people {
+  background-image: url(../assets/images/icon-person.svg);
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.btn-green {
+  background: var(--veryDarkCyan);
+  color: var(--white);
+  width: 31%;
+}
+.active-btn-green {
+  background: var(--strongCyan);
+  color: var(--veryDarkCyan);
+}
+.input-tip {
+  width: 31%;
+  margin: 5px 0;
+}
+.input-tip::placeholder {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .btn-green,
+  .input-tip {
+    width: 48%;
+    height: 46px;
+  }
+  input {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+}
